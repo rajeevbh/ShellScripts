@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "Welcome to Shell Scripting "
+echo "Welcome to Shell Scripting"
