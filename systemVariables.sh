@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Display common system environment variables. System variables can vary depending on the operating system and environment 
 echo "User Information:"
 echo "User: $USER"
