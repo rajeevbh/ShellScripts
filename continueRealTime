@@ -1,0 +1,26 @@
+#!/bin/bash
+
+source_directory="source_files"
+output_directory="processed_files"
+
+# Create the output directory if it doesn't exist
+mkdir -p "$output_directory"
+
+echo "Processing text files from the $source_directory directory..."
+
+for file in "$source_directory"/*; do
+    # Skip non-text files
+    if [ ! -f "$file" ] || [ "${file##*.}" != "txt" ]; then
+        echo "Skipping $file"
+        continue
+    fi
+
+    # Process text files
+    echo "Processing $file..."
+    # Your processing logic goes here
+
+    # Move processed files to the output directory
+    mv "$file" "$output_directory/"
+done
+
+echo "Processing completed. Text files are moved to the $output_directory directory."
