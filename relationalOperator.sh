@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Relational Operators Usage
 # Read two numbers
 echo "Enter the first number: "
 read num1
