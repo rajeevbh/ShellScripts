@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# Boolean Operator Usage
 # Boolean AND
 if [ 1 -eq 1 ] && [ 2 -eq 2 ]; then
     echo "Both conditions are true (AND)"
